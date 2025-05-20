@@ -1,3 +1,8 @@
+:root {
+  --black: #030303;
+  --white: #fffdfd;
+}
+
 *,
 *::after,
 *::before {
@@ -13,12 +18,44 @@ html {
 body {
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
+  color: var(--black);
 }
 
 h1 {
   font-family: 'Delius Unicase', cursive;
-  font-size: 3.8rem;
 }
-h2 {
+
+p,
+a {
   font-size: 1.6rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem;
+}
+
+.navigation_list {
+}
+
+.navigation_item {
+  display: inline-block;
+  list-style: none;
+  margin-right: 1rem;
+}
+.navigation_item:last-child {
+  margin-right: 0;
+}
+
+.navigation_link,
+.navigation_link:active,
+.navigation_link:visited,
+.navigation_link:link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.navigation_link:hover {
+  color: red;
 }
