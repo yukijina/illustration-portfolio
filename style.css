@@ -1,6 +1,7 @@
 :root {
   --black: #030303;
   --white: #fffdfd;
+  --primary-color: #ffc1da;
 }
 
 *,
@@ -33,7 +34,7 @@ a {
 .navigation {
   display: flex;
   justify-content: space-between;
-  margin: 3rem;
+  padding: 3rem;
 }
 
 .navigation_list {
@@ -58,4 +59,31 @@ a {
 
 .navigation_link:hover {
   color: red;
+}
+
+header {
+  background: var(--primary-color);
+  height: 90vh;
+}
+
+.navigation {
+  background: red;
+}
+
+.row-eyes {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.col-eye {
+  max-width: 34rem;
+}
+
+.col-eye:first-child {
+  margin-right: 3rem;
+}
+
+.img-eye {
+  width: 100%;
 }
