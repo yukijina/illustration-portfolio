@@ -3,6 +3,8 @@
   --white: #fffdfd;
   --primary-color: #ffc1da;
   --secondary-color: #471d7a;
+  --secondary-color-light: #6f35b6;
+  --cream: #ffffe6;
 }
 
 *,
@@ -39,10 +41,19 @@ a {
   font-size: 1.6rem;
 }
 
+header {
+  background: var(--primary-color);
+  height: 90vh;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
-  padding: 3rem;
+  padding: 4rem 3rem;
+}
+
+.navigation-logo {
+  width: 5rem;
 }
 
 .navigation_list {
@@ -62,20 +73,14 @@ a {
 .navigation_link:visited,
 .navigation_link:link {
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
+  background: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 50px;
 }
 
 .navigation_link:hover {
-  color: red;
-}
-
-header {
-  background: var(--primary-color);
-  height: 90vh;
-}
-
-.navigation {
-  background: red;
+  background-color: var(--secondary-color-light);
 }
 
 .row-eyes {
@@ -120,7 +125,7 @@ main {
 .row-card {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5fr);
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .img-card-wrapper {
@@ -183,4 +188,30 @@ main {
   text-transform: uppercase;
   color: var(--secondary-color);
   padding-top: 1rem;
+}
+
+footer {
+  background: var(--cream);
+  margin-top: 10rem;
+  padding: 10rem 3rem;
+  color: var(--secondary-color);
+}
+
+.row-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 12rem;
+}
+
+ion-icon {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+ion-icon:first-child {
+  margin-right: 1rem;
 }
