@@ -24,6 +24,13 @@ body {
 
 h1 {
   font-family: 'Delius Unicase', cursive;
+  font-size: 3.8rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 3.2rem;
 }
 
 p,
@@ -86,4 +93,20 @@ header {
 
 .img-eye {
   width: 100%;
+}
+
+/* Main */
+main {
+  padding: 8rem 3rem;
+}
+
+.main-heading-2 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.main-text {
+  text-align: center;
+  font-size: 2rem;
 }
