@@ -2,6 +2,7 @@
   --black: #030303;
   --white: #fffdfd;
   --primary-color: #ffc1da;
+  --secondary-color: #471d7a;
 }
 
 *,
@@ -109,4 +110,77 @@ main {
 .main-text {
   text-align: center;
   font-size: 2rem;
+}
+
+/* Desing work's card */
+.card-container {
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
+}
+.row-card {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5fr);
+}
+
+.img-card-wrapper {
+  /* max-width: 30rem; */
+}
+.img-card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 -4px 4px rgba(255, 193, 218, 0.4),
+    0 6px 8px rgba(71, 29, 122, 0.2);
+}
+
+.col-card-1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.col-card-2 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.col-card-3 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.col-card-4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+.col-card-5 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+.col-card-6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 7;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  padding-top: 1rem;
 }
