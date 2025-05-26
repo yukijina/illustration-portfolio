@@ -40,9 +40,26 @@ h2 {
   margin-bottom: 2rem;
 }
 
+h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 p,
 a {
   font-size: 1.8rem;
+}
+
+a a:visited,
+a:link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+a:hover {
+  color: var(--secondary-color);
 }
 
 .home-header {
@@ -267,4 +284,25 @@ ion-icon:first-child {
 }
 .about-link:active {
   transform: translateY(0.3rem);
+}
+
+/* ******** Concact Page ******** */
+/* Header */
+.contact-wrapper {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+ion-icon.contact-icon {
+  font-size: 2rem;
+  vertical-align: text-top;
+}
+
+.concact-social-icon-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.concact-social-icon-wrapper ion-icon {
+  color: var(--secondary-color);
 }
