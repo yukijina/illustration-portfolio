@@ -306,3 +306,19 @@ ion-icon.contact-icon {
 .concact-social-icon-wrapper ion-icon {
   color: var(--secondary-color);
 }
+
+/* Work */
+.row-work {
+  max-width: 120rem;
+  margin: 2rem auto;
+}
+
+/* photo gallery */
+.row-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.col-gallery {
+  flex-grow: 1;
+}
