@@ -108,9 +108,11 @@ a:hover {
 
 /* Mobile navigation */
 .mobile-hide {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
+/* Laptop navigation */
 .hide {
   display: none;
 }
@@ -384,7 +386,8 @@ ion-icon.contact-icon {
 /* Media query */
 @media (max-width: 767px) {
   .mobile-hide {
-    display: block;
+    opacity: 1;
+    visibility: visible;
   }
   .navigation_nav_mobile_container {
     display: block;
