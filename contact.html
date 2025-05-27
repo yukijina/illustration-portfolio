@@ -22,28 +22,89 @@
         <div>
           <a
             href="
-      /"
+          /"
           >
             <img
               src="/images/logo.svg"
-              alt="Brand logo"
+              alt="Minim's logo"
               class="navigation-logo"
+              title="Minim's logo"
             />
           </a>
         </div>
-        <nav class="navigation_nav">
+
+        <nav class="navigation_nav laptop_hide">
           <ul class="navigation_list">
             <li class="navigation_item">
-              <a href="/" class="navigation_link">Home</a>
+              <a href="/" class="navigation_link" title="Homepage">Home</a>
             </li>
             <li class="navigation_item">
-              <a href="/about.html" class="navigation_link">About me</a>
+              <a href="/work.html" class="navigation_link" title="Minim's work"
+                >My Work</a
+              >
+            </li>
+
+            <li class="navigation_item">
+              <a href="/about.html" class="navigation_link" title="About Minim"
+                >About me</a
+              >
             </li>
             <li class="navigation_item">
-              <a href="/contact.html" class="navigation_link">Contact us</a>
+              <a
+                href="/contact.html"
+                class="navigation_link"
+                title="Contact Minim"
+                >Contact us</a
+              >
             </li>
           </ul>
         </nav>
+
+        <!-- Mobile Nav -->
+        <div class="navigation_nav_mobile_container hide">
+          <nav class="navigation_nav_mobile hide">
+            <!-- Menu list -->
+            <ul class="navigation_mobile_list">
+              <li class="navigation_mobile_item">
+                <a href="/" class="navigation_mobile_link" title="Homepage"
+                  >Home</a
+                >
+              </li>
+              <li class="navigation_mobile_item">
+                <a
+                  href="/work.html"
+                  class="navigation_mobile_link"
+                  title="Minim's work"
+                  >My Work</a
+                >
+              </li>
+              <li class="navigation_mobile_item">
+                <a
+                  href="/about.html"
+                  class="navigation_mobile_link"
+                  title="About Minim"
+                  >About me</a
+                >
+              </li>
+              <li class="navigation_mobile_item">
+                <a
+                  href="/contact.html"
+                  class="navigation_mobile_link"
+                  title="Contact minim"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!-- Menu icon -->
+          <a
+            href="javascript:void(0)"
+            onclick="clickMenu()"
+            class="menu-btn mobile-hide"
+          >
+            <ion-icon name="menu-outline" class="icon-menu"></ion-icon>
+          </a>
+        </div>
       </div>
 
       <div class="row-about">
@@ -117,5 +178,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="/script.js"></script>
   </body>
 </html>

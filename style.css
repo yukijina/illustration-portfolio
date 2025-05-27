@@ -62,11 +62,13 @@ a:hover {
   color: var(--secondary-color);
 }
 
+/* Header */
 .home-header {
   background: var(--primary-color);
   height: 90vh;
 }
 
+/* Navigation */
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -104,6 +106,62 @@ a:hover {
   background-color: var(--secondary-color-light);
 }
 
+/* Mobile navigation */
+.mobile-hide {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.navigation_nav_mobile_container {
+  height: 50vh;
+  position: fixed;
+  width: 90%;
+  transition: all ease-in 0.2s;
+}
+
+.bg-menu-mobile {
+  background: var(--cream);
+}
+
+.navigation_mobile_list {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation_mobile_item {
+  list-style: none;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.navigation_mobile_item {
+  margin-bottom: 0.5rem;
+}
+
+.navigation_mobile_link,
+.navigation_mobile_link:visited,
+.navigation_mobile_link:link,
+.navigation_mobile_link:active {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+a.navigation_mobile_link:hover {
+  border-bottom: 0.3rem solid var(--primary-color);
+}
+
+/* Eyes */
 .row-eyes {
   display: flex;
   justify-content: center;
@@ -321,4 +379,17 @@ ion-icon.contact-icon {
 
 .col-gallery {
   flex-grow: 1;
+}
+
+/* Media query */
+@media (max-width: 767px) {
+  .mobile-hide {
+    display: block;
+  }
+  .navigation_nav_mobile_container {
+    display: block;
+  }
+  .laptop_hide {
+    display: none;
+  }
 }
