@@ -326,18 +326,21 @@ ion-icon:first-child {
 }
 
 /* About Page*/
-.row-about {
+.row-about-contact {
   display: flex;
   justify-content: center;
 }
-.col-about {
+
+.col-about-contact {
   max-width: 50rem;
 }
-.about-hero-img {
+
+.about-contact-hero-img {
   width: 100%;
+  box-shadow: 0 1rem 1rem rgba(71, 29, 122, 0.1);
 }
 
-.col-about:first-child {
+.col-about-contact:first-child {
   margin-right: 2rem;
 }
 
@@ -372,7 +375,7 @@ ion-icon:first-child {
   text-align: center;
   margin-top: 1rem;
   cursor: pointer;
-  box-shadow: 3px 5px 5px rgba(27, 27, 27, 0.1);
+  box-shadow: 0.3rem 0.5rem 0.8rem rgba(71, 29, 122, 0.2);
   transition: all 0.3s;
 }
 
@@ -421,7 +424,21 @@ ion-icon.contact-icon {
 }
 
 /* Media query */
-@media (max-width: 767px) {
+/* 900px */
+@media (max-width: 56.25em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  main {
+    padding: 6rem 3rem;
+  }
+
+  .footer-logo {
+    width: 8rem;
+  }
+
+  /* Mobile navigation */
   .mobile-hide {
     opacity: 1;
     visibility: visible;
@@ -433,6 +450,7 @@ ion-icon.contact-icon {
     display: none;
   }
 
+  /* Home - Cards */
   .row-card {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -480,9 +498,25 @@ ion-icon.contact-icon {
     grid-row-start: 5;
     grid-row-end: 7;
   }
+
+  /* About - Main */
+  .row-about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-about:first-child {
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
 }
 
-@media (max-width: 575px) {
+/* 600px */
+@media (max-width: 36.25em) {
+  .footer-logo {
+    width: 6rem;
+  }
+
   .row-card {
     display: flex;
     flex-direction: column;
