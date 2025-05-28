@@ -62,13 +62,34 @@ a:hover {
   color: var(--secondary-color);
 }
 
-/* Header */
-.home-header {
-  background: var(--primary-color);
-  height: 90vh;
+/* footer - all pages */
+footer {
+  background: var(--cream);
+  margin-top: 10rem;
+  padding: 10rem 3rem;
+  color: var(--secondary-color);
 }
 
-/* Navigation */
+.row-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 12rem;
+}
+
+ion-icon {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+ion-icon:first-child {
+  margin-right: 1rem;
+}
+
+/* Navigation - all pages*/
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -163,6 +184,13 @@ a.navigation_mobile_link:hover {
   border-bottom: 0.3rem solid var(--primary-color);
 }
 
+/* ******** Homepage ******** */
+/* Header */
+.home-header {
+  background: var(--primary-color);
+  height: 95vh;
+}
+
 /* Eyes */
 .row-eyes {
   display: flex;
@@ -192,7 +220,7 @@ main {
   font-size: 2rem;
 }
 
-/* Homepage illustration card */
+/* illustration card */
 .card-container {
   padding-left: 2.8rem;
   padding-right: 2.8rem;
@@ -299,33 +327,8 @@ main {
   color: var(--secondary-color);
 }
 
-footer {
-  background: var(--cream);
-  margin-top: 10rem;
-  padding: 10rem 3rem;
-  color: var(--secondary-color);
-}
-
-.row-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-logo {
-  width: 12rem;
-}
-
-ion-icon {
-  font-size: 4rem;
-  cursor: pointer;
-}
-
-ion-icon:first-child {
-  margin-right: 1rem;
-}
-
-/* About Page*/
+/* ******** About & Contact (common css for flexbox) ******** */
+/* Main */
 .row-about-contact {
   display: flex;
   justify-content: center;
@@ -386,8 +389,8 @@ ion-icon:first-child {
   transform: translateY(0.3rem);
 }
 
-/* ******** Concact Page ******** */
-/* Header */
+/* ******** Concact ******** */
+/* Right side - text box */
 .contact-wrapper {
   text-align: center;
   margin: 2rem auto;
@@ -407,7 +410,8 @@ ion-icon.contact-icon {
   color: var(--secondary-color);
 }
 
-/* Work */
+/* ******** Work ******** */
+/* main */
 .row-work {
   max-width: 120rem;
   margin: 2rem auto;
@@ -423,7 +427,7 @@ ion-icon.contact-icon {
   flex-grow: 1;
 }
 
-/* Media query */
+/* ******** media query ******** */
 /* 900px */
 @media (max-width: 56.25em) {
   html {
@@ -454,7 +458,7 @@ ion-icon.contact-icon {
   .row-card {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    height: 80rem;
+    height: 120rem;
   }
 
   .col-card-1 {
@@ -500,12 +504,12 @@ ion-icon.contact-icon {
   }
 
   /* About - Main */
-  .row-about {
+  .row-about-contact {
     flex-direction: column;
     align-items: center;
   }
 
-  .col-about:first-child {
+  .col-about-contact:first-child {
     margin-right: 0;
     margin-bottom: 4rem;
   }
